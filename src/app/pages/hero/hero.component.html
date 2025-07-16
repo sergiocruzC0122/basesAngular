@@ -1,0 +1,23 @@
+<h1>{{ name() }}</h1>
+
+<dl>
+    <td>Nombre: <span>{{ name() }}</span></td>
+    <dd></dd>
+    <td>Edad: <span>{{ age() }}</span></td>
+    <dd></dd>
+    <td>Método: <span>{{ getHeroDescription() }}</span></td>
+    <dd></dd>
+    <td>Capitalizado: <span>{{ name() | uppercase }}</span> </td>
+</dl>
+
+<button (click)="changeHero()" class="btn btn-primary mx-2">
+  Cambiar nombre
+</button>
+
+<button (click)="chageAge(60)" class="btn btn-primary">
+    Cambiar edad
+</button>
+
+<button (click)="resetForm()" class="btn btn-primary mx-2">
+    Reset
+</button>
